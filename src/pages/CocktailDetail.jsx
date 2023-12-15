@@ -18,7 +18,7 @@ const CocktailDetail = () => {
             setCocktails(cocktailsAllJson.drinks)
             }) ();
     }, []);   
-     
+
         return(
             <>
             <Header />
@@ -29,6 +29,7 @@ const CocktailDetail = () => {
                     return (
                         <article>
                             <h2>{cocktail.strDrink}</h2>
+                            <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
                             <p>Catégorie : {cocktail.strCategory}</p>
                             <p>Instructions : {cocktail.strInstructions}</p>
                         </article>
